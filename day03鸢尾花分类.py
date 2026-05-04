@@ -86,7 +86,7 @@ plt.show()
 Knn = KNeighborsClassifier(n_neighbors=1) # 只参考距离最近的1个点
 '''
     想要基于训练集来构建模型，需要调用knn对象的fit方法，输入参数为X_train和y_train，
-    前者包含训练数据，后者包含相应德训练标签。
+    前者包含训练数据，后者包含相应的训练标签。
 '''
 Knn.fit(X_train, y_train) # fit方法只是把数据储存起来
 # 进行预测测试
