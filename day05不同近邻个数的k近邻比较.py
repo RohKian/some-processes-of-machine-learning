@@ -27,15 +27,15 @@ print('Test set accuracy:{:.2f}'.format(clf.score(X_test, y_test)))
     根据平面中每个点所属的类别对平面进行着色，这样可以查看决策边界。即
     算法对类别0和类别1进行分界。
 '''
-fig, axes = plt.subplot(1, 3, figsize = (10, 3))
+fig, axes = plt.subplots(1, 3, figsize = (10, 3))
 for n_neighbors, ax in zip([1, 3, 9], axes):
     # fit方法返回对象本身，所有可以将实例化和拟合放在一行代码中
     clf = KNeighborsClassifier(n_neighbors=n_neighbors).fit(X=x, y=y)
     plt
     mglearn.plots.plot_2d_separator(clf, x, fill=True, eps=0.5, ax=ax, alpha=0.4)
     mglearn.discrete_scatter(x[:, 0], x[:, 1], y, ax=ax)
-    plt.show()
     ax.set_title('{}neighbors(s)'.format(n_neighbors))
-    ax.set_xlable('feature 0')
-    ax.set_ylable('feature 1')
-    axes[0].legend(loc=3)
+    ax.set_xlabel('feature 0')
+    ax.set_ylabel('feature 1')
+axes[0].legend(loc=3)
+plt.show()
