@@ -26,3 +26,4 @@ lr = LinearRegression().fit(X_train, y_train)
 
 print('lr.coef_:{}'.format(lr.coef_))
 print('lr.intercept_:{}'.format(lr.intercept_))
+
