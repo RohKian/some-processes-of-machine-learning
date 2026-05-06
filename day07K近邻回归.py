@@ -41,3 +41,7 @@ for n_neighbors, ax in zip([1, 3, 9], axes):
     ax.set_ylabel('Target')
     axes[0].legend(['Model predicyion', 'Training data/target', 'Test data/target'], loc='best')
 plt.show() 
+'''
+    仅使用单一邻居，训练集中的每个点都对预测结果有显著影响，预测结果的图像经过所有数据点，
+    导致预测结果非常不稳定。考虑更多的邻居后，预测结果变得平滑，但对训练数据的拟合不好。
+'''
