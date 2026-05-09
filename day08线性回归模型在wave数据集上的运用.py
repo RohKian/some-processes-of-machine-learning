@@ -23,7 +23,8 @@ lr = LinearRegression().fit(X_train, y_train)
     斜率参数（w，也叫作权重或系数）被保存在coef_属性中，
     而偏移或截距(b)被保存在intercept_属性中。
 '''
-
+# 查看线性回归系数
 print('lr.coef_:{}'.format(lr.coef_))
 print('lr.intercept_:{}'.format(lr.intercept_))
-
+# 查看训练集和测试集性能
+print('Training set score:{:.4f}\n Test set score:{:.4f}'.format(lr.score(X_train, y_train), lr.score(X_test, y_test)))
