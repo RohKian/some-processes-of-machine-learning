@@ -22,4 +22,3 @@ print('sample counts per class:\n{}'.format({
 print('Feature names:\n{}'.format(cancer['feature_names']))
 # 查看该数据集德说明
 print('cancer dataset description:\n{}'.format(cancer['DESCR']))
-
