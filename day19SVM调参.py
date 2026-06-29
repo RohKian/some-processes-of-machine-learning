@@ -34,3 +34,4 @@ axes[0, 0].legend(['class 0', 'class 1', 'sv class 0', 'sv class 1'],
                   ncol=4,
                   loc=(0.9, 1.2))
 plt.show()
+
